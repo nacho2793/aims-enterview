@@ -1,0 +1,32 @@
+input {
+    border: none;
+    outline: none;
+    border-bottom: 1px grey solid;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 10rem;
+}
+.CoinFlip {
+    width: 50%;
+    min-width: 500px;
+    margin: 2rem auto;
+    border: gray 1px solid;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px gray;
+    width: 50%;
+    min-width: 500px;
+    padding-bottom: 1rem;
+    
+    animation: downToUp 1s ease;
+}
+
+@keyframes downToUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

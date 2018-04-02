@@ -1,0 +1,23 @@
+.Container {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 1rem;
+    text-align: center;
+    user-select: none;
+}
+.full {
+    width: 100%;
+    display: inline-block;
+}
+.full:hover {
+    cursor: pointer;
+}
+.number {
+    font-size: 3rem;
+    padding: 0 1rem;
+    color: grey;
+}
+.measure {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}

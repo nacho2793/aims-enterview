@@ -1,0 +1,38 @@
+.Header {
+    width: 100vw;
+    display: flex;
+    height: 4rem;
+    background-color: green;
+    color: white;
+    align-content: space-between;
+    align-items: center;
+}
+.item {
+    padding: 1rem;
+    flex: 1;
+}
+.center {
+    flex: 2;
+    text-align: center;
+}
+.navContainer {
+    flex: 1;
+    display: flex;
+    align-content: space-between;
+}
+.nav {
+    margin: auto 1.5rem;
+    padding: auto 1.5rem;
+    flex: 1;
+    text-align: center;
+    transition: all 0.2s ease;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+}
+.nav:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+    color: black;
+
+}

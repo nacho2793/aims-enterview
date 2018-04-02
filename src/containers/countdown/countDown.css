@@ -1,0 +1,61 @@
+.container {
+    width: 40%;
+    display: flex;
+    min-width: 500px;
+    margin: 0 auto;
+}
+.CountDown {
+    text-align: center;
+    animation: downToUp 1s ease;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: gray 1px solid;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px gray;
+    width: 50%;
+    min-width: 500px;
+
+}
+button {
+    margin: .5rem;
+    padding: .5rem;
+    width: 5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 2px black;
+    transition: all 0.2s ease;
+}
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 4px black;
+    cursor: pointer;
+}
+button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 3px black;
+}
+button.succes {
+    color: white;
+    background-color: green;
+}
+button:disabled {
+    color: grey;
+    background-color: rgb(78, 52, 52);
+}
+button:disabled:hover {
+    transform: translateY(0) !important;
+    box-shadow: 0 2px 2px black !important;
+    cursor: not-allowed;
+}
+
+@keyframes downToUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
